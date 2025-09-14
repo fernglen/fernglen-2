@@ -65,6 +65,10 @@ $borderWidth: 0.15rem;
   padding: 0;
 }
 
+html {
+  font-size: 125%;
+}
+
 html, body {
   min-height: 100%;
 }
@@ -189,7 +193,7 @@ footer {
 /* RESPONSIVE DESIGN                                                                              */
 
 // @media (min-width: 200rem) {
-@media (min-width: 60rem) {
+@media (min-width: 80rem) {
 
   .sideMenu {
     display: block;
@@ -228,7 +232,6 @@ body {
   background-color: $base-color;
   color: $text-color;
   font-family: 'Lato', 'Helvetica', 'sans-serif';
-  font-size: 1.1rem;
   line-height: 1.75rem;
 }
 
@@ -246,7 +249,7 @@ body {
 
 .mobileMenuCurrent p {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
-  font-size: 1.2em;
+  font-size: 1.25rem;
   text-align: center;
   text-decoration: none;
 }
@@ -278,7 +281,7 @@ body {
 
 .mobileMenu a, .sideMenu a  {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
-  font-size: 1.2em;
+  font-size: 1.25rem;
   text-align: center;
   text-decoration: none;
   border: $borderWidth solid transparent;

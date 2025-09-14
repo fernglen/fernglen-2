@@ -67,6 +67,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 125%; }
+
 html, body {
   min-height: 100%; }
 
@@ -168,7 +171,7 @@ footer {
 
 /*------------------------------------------------------------------------------------------------*/
 /* RESPONSIVE DESIGN                                                                              */
-@media (min-width: 60rem) {
+@media (min-width: 80rem) {
   .sideMenu {
     display: block; }
   .mobileHeader {
@@ -192,7 +195,6 @@ body {
   background-color: #1b321f;
   color: #f9f5ec;
   font-family: 'Lato', 'Helvetica', 'sans-serif';
-  font-size: 1.1rem;
   line-height: 1.75rem; }
 
 .mobileHeader {
@@ -207,7 +209,7 @@ body {
 
 .mobileMenuCurrent p {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
-  font-size: 1.2em;
+  font-size: 1.25rem;
   text-align: center;
   text-decoration: none; }
 
@@ -234,7 +236,7 @@ body {
 
 .mobileMenu a, .sideMenu a {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
-  font-size: 1.2em;
+  font-size: 1.25rem;
   text-align: center;
   text-decoration: none;
   border: 0.15rem solid transparent;

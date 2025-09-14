@@ -28,8 +28,8 @@
       </label>
       <nav class="mobileMenu">
         <ul>
-          {{- range site.Menus.main -}}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{- range site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
           {{- end }}
         </ul>
       </nav>
@@ -42,9 +42,9 @@
       <ul>
         {{- range site.Menus.main -}}
           {{- if $.IsMenuCurrent .Menu . }}
-            <li><a href="{{ .URL }}" class="selected">{{ .Name }}</a></li>
+        <li><a href="{{ .URL }}" class="selected">{{ .Name }}</a></li>
           {{- else }}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
           {{- end -}}
         {{- end }}
       </ul>
