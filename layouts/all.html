@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{- with resources.Get "sass/fernglen.scss" -}}
       {{- with resources.ExecuteAsTemplate "sass/fernglen.scss" $ . -}}
         {{- $cssOptions := dict "targetPath" "css/fernglen.css" -}}

@@ -68,10 +68,12 @@
   padding: 0; }
 
 html {
-  font-size: 125%; }
-
-html, body {
+  font-size: 125%;
   min-height: 100%; }
+
+body {
+  min-height: 100%;
+  text-size-adjust: none; }
 
 .mobileHeader {
   position: fixed;

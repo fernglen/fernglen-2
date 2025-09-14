@@ -67,10 +67,12 @@ $borderWidth: 0.15rem;
 
 html {
   font-size: 125%;
+  min-height: 100%;
 }
 
-html, body {
+body {
   min-height: 100%;
+  text-size-adjust: none;
 }
 
 .mobileHeader {
