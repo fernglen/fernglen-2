@@ -87,26 +87,14 @@ body {
 .mobileHeader .fernglenLogo {
   height: 3rem; }
 
-.mobileMenuCurrent {
-  position: fixed;
-  top: 0.5rem;
-  right: 1rem;
-  width: 19rem;
-  display: flex;
-  align-items: center;
-  z-index: 1001; }
-
-.mobileMenuCurrent p {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
 .hamburgerIcon {
   position: fixed;
   top: 0.5rem;
   right: 1rem;
-  margin: 0 0.5rem;
-  padding: 0.75rem; }
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+  z-index: 1001; }
 
 #mobileMenuToggle {
   display: none; }
@@ -115,16 +103,13 @@ body {
   display: none;
   position: fixed;
   top: 0.5rem;
+  left: 1rem;
   right: 1rem;
-  width: 19rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   z-index: 1000; }
 
 #mobileMenuToggle:checked ~ .mobileMenu {
   display: block; }
-
-.mobileMenu ul {
-  padding-top: 3rem; }
 
 .sideMenu {
   display: none;
@@ -175,6 +160,8 @@ footer {
 /*------------------------------------------------------------------------------------------------*/
 /* RESPONSIVE DESIGN                                                                              */
 @media (min-width: 60rem) {
+  html {
+    font-size: 125%; }
   .sideMenu {
     display: block; }
   .mobileHeader {
@@ -218,10 +205,10 @@ body {
 
 .hamburgerIcon {
   display: flex;
+  border: 0.15rem solid #f9f5ec;
+  border-radius: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
-  width: 3rem;
-  height: 3rem;
   cursor: pointer; }
 
 .hamburgerIcon span {
@@ -229,10 +216,13 @@ body {
   height: 0.25rem;
   width: 100%; }
 
+#mobileMenuToggle:checked ~ .hamburgerIcon {
+  border-color: transparent; }
+
 .mobileMenu {
   background-color: #1b321f;
   border: 0.15rem solid #f9f5ec;
-  border-radius: 1.5rem; }
+  border-radius: 0.5rem; }
 
 .mobileMenu li, .sideMenu li {
   list-style: none; }
@@ -246,10 +236,10 @@ body {
   border-radius: 1.5rem;
   padding: 0.25rem 1rem; }
 
-.mobileMenu a:hover, .sideMenu a:not(.selected):hover {
+.mobileMenu a:not(.selected):hover, .sideMenu a:not(.selected):hover {
   border-color: #86ac39; }
 
-.sideMenu .selected {
+.mobileMenu .selected, .sideMenu .selected {
   border-color: #f9f5ec; }
 
 h1 {

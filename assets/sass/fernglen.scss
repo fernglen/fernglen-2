@@ -13,6 +13,8 @@ $mobileHeaderPaddingV: 0.5rem;
 $mobileHeaderHeightTotal: $mobileHeaderHeight + 2 * $mobileHeaderPaddingV;
 $mobileMenuCurrentWidth: $sideMenuWidth + $mobileHeaderHeight;
 $borderWidth: 0.15rem;
+$contentPaddingH: 1rem;
+$contentPaddingV: 1rem;
 
 
 /*------------------------------------------------------------------------------------------------*/
@@ -89,28 +91,14 @@ body {
   height: $mobileHeaderHeight;
 }
 
-.mobileMenuCurrent {
-  position: fixed;
-  top: $mobileHeaderPaddingV;
-  right: $mobileHeaderPaddingH;
-  width: $mobileMenuCurrentWidth;
-  display: flex;
-  align-items: center;
-  z-index: 1001;
-}
-
-.mobileMenuCurrent p {
-  width: 100%;
-  padding-left: $mobileHeaderPaddingH;
-  padding-right: $mobileHeaderPaddingH;
-}
-
 .hamburgerIcon {
   position: fixed;
   top: $mobileHeaderPaddingV;
   right: $mobileHeaderPaddingH;
-  margin: 0 0.5rem;
+  width: $mobileHeaderHeight;
+  height: $mobileHeaderHeight;
   padding: 0.75rem;
+  z-index: 1001;
 }
 
 #mobileMenuToggle {
@@ -121,18 +109,14 @@ body {
   display: none;
   position: fixed;
   top: $mobileHeaderPaddingV;
+  left: $mobileHeaderPaddingH;
   right: $mobileHeaderPaddingH;
-  width: $mobileMenuCurrentWidth;
-  padding: $mobileHeaderPaddingV $mobileHeaderPaddingH;
+  padding: $mobileHeaderPaddingV $mobileHeaderHeight;
   z-index: 1000;
 }
 
 #mobileMenuToggle:checked ~ .mobileMenu {
   display: block;
-}
-
-.mobileMenu ul {
-  padding-top: $mobileHeaderHeight;
 }
 
 .sideMenu {
@@ -197,6 +181,10 @@ footer {
 
 @media (min-width: 60rem) {
 
+  html {
+    font-size: 125%;
+  }
+
   .sideMenu {
     display: block;
   }
@@ -258,10 +246,10 @@ body {
 
 .hamburgerIcon {
   display: flex;
+  border: $borderWidth solid $text-color;
+  border-radius: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
-  width: $mobileHeaderHeight;
-  height: $mobileHeaderHeight;
   cursor: pointer;
 }
 
@@ -271,10 +259,14 @@ body {
   width: 100%;
 }
 
+#mobileMenuToggle:checked ~ .hamburgerIcon {
+  border-color: transparent;
+}
+
 .mobileMenu {
   background-color: $base-color;
   border: $borderWidth solid $text-color;
-  border-radius: $mobileHeaderHeight / 2;
+  border-radius: 0.5rem;
 }
 
 .mobileMenu li, .sideMenu li  {
@@ -291,11 +283,11 @@ body {
   padding: 0.25rem 1rem;
 }
 
-.mobileMenu a:hover, .sideMenu a:not(.selected):hover  {
+.mobileMenu a:not(.selected):hover, .sideMenu a:not(.selected):hover  {
   border-color: $base-color-lightest;
 }
 
-.sideMenu .selected {
+.mobileMenu .selected, .sideMenu .selected {
   border-color: $text-color;
 }
 

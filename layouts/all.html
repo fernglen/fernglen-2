@@ -19,18 +19,19 @@
     <header class="mobileHeader">
       <img src={{ relURL "images/fernglen.svg" }} alt="Fernglen logo" class="fernglenLogo">
       <input type="checkbox" id="mobileMenuToggle">
-      <label for="mobileMenuToggle" class="mobileMenuCurrent">
-        <p>{{ .Title }}</p>
-        <div class="hamburgerIcon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <label for="mobileMenuToggle" class="hamburgerIcon">
+        <span></span>
+        <span></span>
+        <span></span>
       </label>
       <nav class="mobileMenu">
         <ul>
           {{- range site.Menus.main }}
+            {{- if $.IsMenuCurrent .Menu . }}
+          <li><a href="{{ .URL }}" class="selected">{{ .Name }}</a></li>
+            {{- else }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{- end -}}
           {{- end }}
         </ul>
       </nav>
