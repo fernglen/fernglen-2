@@ -67,6 +67,7 @@ $borderWidth: 0.15rem;
 
 html {
   min-height: 100%;
+  font-size: medium;
 }
 
 body {
@@ -75,6 +76,7 @@ body {
 }
 
 .mobileHeader {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -193,8 +195,7 @@ footer {
 /*------------------------------------------------------------------------------------------------*/
 /* RESPONSIVE DESIGN                                                                              */
 
-// @media (min-width: 200rem) {
-@media (min-width: 80rem) {
+@media (min-width: 60rem) {
 
   .sideMenu {
     display: block;
@@ -204,13 +205,13 @@ footer {
     display: none;
   }
 
-  .content {
-    margin: 0 0 0 $sideMenuWidth;
-  }
-
   main {
     margin: 1rem 15% ;
   }
+
+  .content {
+    margin: 0 0 0 $sideMenuWidth;
+  }  
 
   .imageL {
     float: left;

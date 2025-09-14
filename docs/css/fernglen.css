@@ -68,13 +68,15 @@
   padding: 0; }
 
 html {
-  min-height: 100%; }
+  min-height: 100%;
+  font-size: medium; }
 
 body {
   min-height: 100%;
   text-size-adjust: none; }
 
 .mobileHeader {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -172,15 +174,15 @@ footer {
 
 /*------------------------------------------------------------------------------------------------*/
 /* RESPONSIVE DESIGN                                                                              */
-@media (min-width: 80rem) {
+@media (min-width: 60rem) {
   .sideMenu {
     display: block; }
   .mobileHeader {
     display: none; }
-  .content {
-    margin: 0 0 0 16rem; }
   main {
     margin: 1rem 15%; }
+  .content {
+    margin: 0 0 0 16rem; }
   .imageL {
     float: left;
     width: 50%;
