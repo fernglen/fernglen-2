@@ -5,28 +5,28 @@
 /* Lato */
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/LatoLatin-Regular.woff2") format("woff2"), url("/fonts/LatoLatin-Regular.woff") format("woff"), url("/fonts/LatoLatin-Regular.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/LatoLatin-Regular.woff2") format("woff2"), url("/fernglen-2/fonts/LatoLatin-Regular.woff") format("woff"), url("/fernglen-2/fonts/LatoLatin-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/LatoLatin-Italic.woff2") format("woff2"), url("/fonts/LatoLatin-Italic.woff") format("woff"), url("/fonts/LatoLatin-Italic.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/LatoLatin-Italic.woff2") format("woff2"), url("/fernglen-2/fonts/LatoLatin-Italic.woff") format("woff"), url("/fernglen-2/fonts/LatoLatin-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/LatoLatin-Bold.woff2") format("woff2"), url("/fonts/LatoLatin-Bold.woff") format("woff"), url("/fonts/LatoLatin-Bold.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/LatoLatin-Bold.woff2") format("woff2"), url("/fernglen-2/fonts/LatoLatin-Bold.woff") format("woff"), url("/fernglen-2/fonts/LatoLatin-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
   text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/LatoLatin-BoldItalic.woff2") format("woff2"), url("/fonts/LatoLatin-BoldItalic.woff") format("woff"), url("/fonts/LatoLatin-BoldItalic.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/LatoLatin-BoldItalic.woff2") format("woff2"), url("/fernglen-2/fonts/LatoLatin-BoldItalic.woff") format("woff"), url("/fernglen-2/fonts/LatoLatin-BoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
   text-rendering: optimizeLegibility; }
@@ -34,28 +34,28 @@
 /* Raleway */
 @font-face {
   font-family: "Raleway";
-  src: url("/fonts/raleway-regular-original.woff2") format("woff2"), url("/fonts/raleway-regular-original.woff") format("woff"), url("/fonts/raleway-regular-original.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/raleway-regular-original.woff2") format("woff2"), url("/fernglen-2/fonts/raleway-regular-original.woff") format("woff"), url("/fernglen-2/fonts/raleway-regular-original.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("/fonts/raleway-regular-italic-original.woff2") format("woff2"), url("/fonts/raleway-regular-italic-original.woff") format("woff"), url("/fonts/raleway-regular-italic-original.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/raleway-regular-italic-original.woff2") format("woff2"), url("/fernglen-2/fonts/raleway-regular-italic-original.woff") format("woff"), url("/fernglen-2/fonts/raleway-regular-italic-original.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("/fonts/raleway-bold-original.woff2") format("woff2"), url("/fonts/raleway-bold-original.woff") format("woff"), url("/fonts/raleway-bold-original.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/raleway-bold-original.woff2") format("woff2"), url("/fernglen-2/fonts/raleway-bold-original.woff") format("woff"), url("/fernglen-2/fonts/raleway-bold-original.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
   text-rendering: optimizeLegibility; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("/fonts/raleway-bold-italic-original.woff2") format("woff2"), url("/fonts/raleway-bold-italic-original.woff") format("woff"), url("/fonts/raleway-bold-italic-original.ttf") format("truetype");
+  src: url("/fernglen-2/fonts/raleway-bold-italic-original.woff2") format("woff2"), url("/fernglen-2/fonts/raleway-bold-italic-original.woff") format("woff"), url("/fernglen-2/fonts/raleway-bold-italic-original.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
   text-rendering: optimizeLegibility; }

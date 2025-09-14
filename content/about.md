@@ -12,7 +12,7 @@ Fernglen has been used for education and research since the 1920s by such people
 
 ## Education Centre
 
-{{< imageRight path="/images/education-centre-outside.webp" caption="Education Centre" >}}
+{{< imageRight path="images/education-centre-outside.webp" caption="Education Centre" >}}
 
 Fernglen has been visited by many people from horticultural groups, Unitec students and schoolchildren. It became clear early on that Fernglen required a building that could cater for schoolchildren and visitors. It was Fernglen's good fortune that Peter Thomas, Birkenhead Rotary Club, took a keen interest in the gardens and it was through his recommendation the education centre was built thanks to the fund-raising effort of the Birkenhead Rotary Club and supported by the former North Shore City Council, ASB, Utility Corporation and other well-wishers the project came together. Thanks to Birkenhead Rotary Club, Fernglen has a well-equipped education facility which was completed in 1997.
 

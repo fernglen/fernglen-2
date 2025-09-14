@@ -20,9 +20,9 @@ $borderWidth: 0.15rem;
 
 @mixin customFont($family, $filename, $style, $weight) {
     font-family: $family;
-    src: url('/fonts/#{$filename}.woff2') format('woff2'),
-         url('/fonts/#{$filename}.woff') format('woff'),
-         url('/fonts/#{$filename}.ttf') format('truetype');
+    src: url('{{ "fonts/#{$filename}.woff2" | relURL }}') format('woff2'),
+         url('{{ "fonts/#{$filename}.woff" | relURL }}') format('woff'),
+         url('{{ "fonts/#{$filename}.ttf" | relURL }}') format('truetype');
     font-style: $style;
     font-weight: $weight;
     text-rendering: optimizeLegibility;

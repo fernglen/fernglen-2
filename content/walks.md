@@ -4,7 +4,7 @@ title = 'Walks'
 
 # Fernglen Garden and Bush Walk
 
-Fernglen has well maintained walking tracks that provide an excellent opportunity to observe many interesting species. As you enter the gates to Fernglen there is a kiosk that provides general information about New Zealand flora, a history of Fernglen with notes on the different groups of plants to be seen and a plan of the region drawn to scale. {{< link text="A self-guided tour is available" href="/assets/fernglen-tour.pdf" target="_blank" >}}. Take an instructional guide from a tray in the kiosk. Follow the directions on the instruction guide to marked numbers within the garden, each one tells a little about the 26 specific plants/trees of interest.  Within the walk is an active water way running over mountain rocks, inspired by Muriel Fisher’s many walks in the Aoraki/Mt Cook region.
+Fernglen has well maintained walking tracks that provide an excellent opportunity to observe many interesting species. As you enter the gates to Fernglen there is a kiosk that provides general information about New Zealand flora, a history of Fernglen with notes on the different groups of plants to be seen and a plan of the region drawn to scale. {{< link text="A self-guided tour is available" href="assets/fernglen-tour.pdf" target="_blank" >}}. Take an instructional guide from a tray in the kiosk. Follow the directions on the instruction guide to marked numbers within the garden, each one tells a little about the 26 specific plants/trees of interest.  Within the walk is an active water way running over mountain rocks, inspired by Muriel Fisher’s many walks in the Aoraki/Mt Cook region.
 
 Toilet facilities are available by the entrance to the Education Centre. 
 
