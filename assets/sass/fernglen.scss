@@ -1,0 +1,331 @@
+/*------------------------------------------------------------------------------------------------*/
+/* CONSTANTS                                                                                      */
+
+$base-color: hsl(132, 30, 15);
+$base-color-light: hsl(100, 30, 30);
+$base-color-lightest: hsl(80, 50, 45);
+$text-color: hsl(43, 50, 95);
+$highlight-color: hsl(359, 47, 40);
+$sideMenuWidth: 16rem;
+$mobileHeaderHeight: 3rem;
+$mobileHeaderPaddingH: 1rem;
+$mobileHeaderPaddingV: 0.5rem;
+$mobileHeaderHeightTotal: $mobileHeaderHeight + 2 * $mobileHeaderPaddingV;
+$mobileMenuCurrentWidth: $sideMenuWidth + $mobileHeaderHeight;
+$borderWidth: 0.15rem;
+
+
+/*------------------------------------------------------------------------------------------------*/
+/* FONTS                                                                                          */
+
+@mixin customFont($family, $filename, $style, $weight) {
+    font-family: $family;
+    src: url('/fonts/#{$filename}.woff2') format('woff2'),
+         url('/fonts/#{$filename}.woff') format('woff'),
+         url('/fonts/#{$filename}.ttf') format('truetype');
+    font-style: $style;
+    font-weight: $weight;
+    text-rendering: optimizeLegibility;
+}
+
+/* Lato */
+@font-face {
+    @include customFont('Lato', 'LatoLatin-Regular', normal, normal);
+}
+@font-face {
+    @include customFont('Lato', 'LatoLatin-Italic', italic, normal);
+}
+@font-face {
+    @include customFont('Lato', 'LatoLatin-Bold', normal, bold);
+}
+@font-face {
+    @include customFont('Lato', 'LatoLatin-BoldItalic', italic, bold);
+}
+/* Raleway */
+@font-face {
+    @include customFont('Raleway', 'raleway-regular-original', normal, normal);
+}
+@font-face {
+    @include customFont('Raleway', 'raleway-regular-italic-original', italic, normal);
+}
+@font-face {
+    @include customFont('Raleway', 'raleway-bold-original', normal, bold);
+}
+@font-face {
+    @include customFont('Raleway', 'raleway-bold-italic-original', italic, bold);
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/* LAYOUT                                                                                        */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+.mobileHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $mobileHeaderHeightTotal;
+  padding: $mobileHeaderPaddingV $mobileHeaderPaddingH;
+}
+
+.mobileHeader .fernglenLogo {
+  height: $mobileHeaderHeight;
+}
+
+.mobileMenuCurrent {
+  position: fixed;
+  top: $mobileHeaderPaddingV;
+  right: $mobileHeaderPaddingH;
+  width: $mobileMenuCurrentWidth;
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+}
+
+.mobileMenuCurrent p {
+  width: 100%;
+  padding-left: $mobileHeaderPaddingH;
+  padding-right: $mobileHeaderPaddingH;
+}
+
+.hamburgerIcon {
+  position: fixed;
+  top: $mobileHeaderPaddingV;
+  right: $mobileHeaderPaddingH;
+  margin: 0 0.5rem;
+  padding: 0.75rem;
+}
+
+#mobileMenuToggle {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: $mobileHeaderPaddingV;
+  right: $mobileHeaderPaddingH;
+  width: $mobileMenuCurrentWidth;
+  padding: $mobileHeaderPaddingV $mobileHeaderPaddingH;
+  z-index: 1000;
+}
+
+#mobileMenuToggle:checked ~ .mobileMenu {
+  display: block;
+}
+
+.mobileMenu ul {
+  padding-top: $mobileHeaderHeight;
+}
+
+.sideMenu {
+  display: none;
+  width: $sideMenuWidth;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0.5rem;
+}
+
+.sideMenu .fernglenLogo {
+  width: 100%;
+  padding: 1rem;
+}
+
+.sideMenu ul, .mobileMenu ul {
+  margin: 0;
+}
+
+.sideMenu a, .mobileMenu a {
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: $mobileHeaderHeightTotal 1rem 1rem 1rem;
+}
+
+main {
+  flex: 1;
+  margin: 1rem 0;
+}
+
+footer {
+  flex: none;
+  margin: 1rem 0;
+}
+
+.embeddedImage {
+  border: 0;
+  width: 100%;
+}
+
+.imageL {
+  float: none;
+  display: block;
+  margin: 1rem 0;
+}
+
+.imageR {
+  float: none;
+  display: block;
+  margin: 1rem 0;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/* RESPONSIVE DESIGN                                                                              */
+
+// @media (min-width: 200rem) {
+@media (min-width: 60rem) {
+
+  .sideMenu {
+    display: block;
+  }
+
+  .mobileHeader {
+    display: none;
+  }
+
+  .content {
+    margin: 0 0 0 $sideMenuWidth;
+  }
+
+  main {
+    margin: 1rem 15% ;
+  }
+
+  .imageL {
+    float: left;
+    width: 50%;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .imageR {
+    float: right;
+    width: 50%;
+    margin: 1rem 0 1rem 1rem;
+  }
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/* STYLING                                                                                        */
+
+body {
+  background-color: $base-color;
+  color: $text-color;
+  font-family: 'Lato', 'Helvetica', 'sans-serif';
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+.mobileHeader {
+  padding: $mobileHeaderPaddingV $mobileHeaderPaddingH;
+  background-color: $base-color;
+  box-shadow: $base-color 0 1rem 1rem;
+}
+
+.mobileMenuCurrent {
+  border: $borderWidth solid $text-color;
+  border-radius: $mobileHeaderHeight / 2;
+  cursor: pointer;
+}
+
+.mobileMenuCurrent p {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: $mobileHeaderHeight;
+  height: $mobileHeaderHeight;
+  cursor: pointer;
+}
+
+.hamburgerIcon span {
+  background-color: $text-color;
+  height: 0.25rem;
+  width: 100%;
+}
+
+.mobileMenu {
+  background-color: $base-color;
+  border: $borderWidth solid $text-color;
+  border-radius: $mobileHeaderHeight / 2;
+}
+
+.mobileMenu li, .sideMenu li  {
+  list-style: none;
+}
+
+.mobileMenu a, .sideMenu a  {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  border: $borderWidth solid transparent;
+  border-radius: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.mobileMenu a:hover, .sideMenu a:not(.selected):hover  {
+  border-color: $base-color-lightest;
+}
+
+.sideMenu .selected {
+  border-color: $text-color;
+}
+
+h1 {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 2rem;
+  padding: 1.5rem 0 1.25rem 0;
+}
+
+h2 {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.5rem;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+a {
+  color: $text-color;
+}
+
+ul {
+  list-style: disc outside none;
+  margin-left: 1rem;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}

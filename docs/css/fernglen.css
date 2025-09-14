@@ -1,0 +1,277 @@
+/*------------------------------------------------------------------------------------------------*/
+/* CONSTANTS                                                                                      */
+/*------------------------------------------------------------------------------------------------*/
+/* FONTS                                                                                          */
+/* Lato */
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/LatoLatin-Regular.woff2") format("woff2"), url("/fonts/LatoLatin-Regular.woff") format("woff"), url("/fonts/LatoLatin-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/LatoLatin-Italic.woff2") format("woff2"), url("/fonts/LatoLatin-Italic.woff") format("woff"), url("/fonts/LatoLatin-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/LatoLatin-Bold.woff2") format("woff2"), url("/fonts/LatoLatin-Bold.woff") format("woff"), url("/fonts/LatoLatin-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/LatoLatin-BoldItalic.woff2") format("woff2"), url("/fonts/LatoLatin-BoldItalic.woff") format("woff"), url("/fonts/LatoLatin-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
+/* Raleway */
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-regular-original.woff2") format("woff2"), url("/fonts/raleway-regular-original.woff") format("woff"), url("/fonts/raleway-regular-original.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-regular-italic-original.woff2") format("woff2"), url("/fonts/raleway-regular-italic-original.woff") format("woff"), url("/fonts/raleway-regular-italic-original.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-bold-original.woff2") format("woff2"), url("/fonts/raleway-bold-original.woff") format("woff"), url("/fonts/raleway-bold-original.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-bold-italic-original.woff2") format("woff2"), url("/fonts/raleway-bold-italic-original.woff") format("woff"), url("/fonts/raleway-bold-italic-original.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
+/*------------------------------------------------------------------------------------------------*/
+/* LAYOUT                                                                                        */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  min-height: 100%; }
+
+.mobileHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem 1rem; }
+
+.mobileHeader .fernglenLogo {
+  height: 3rem; }
+
+.mobileMenuCurrent {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  width: 19rem;
+  display: flex;
+  align-items: center;
+  z-index: 1001; }
+
+.mobileMenuCurrent p {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.hamburgerIcon {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  margin: 0 0.5rem;
+  padding: 0.75rem; }
+
+#mobileMenuToggle {
+  display: none; }
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  width: 19rem;
+  padding: 0.5rem 1rem;
+  z-index: 1000; }
+
+#mobileMenuToggle:checked ~ .mobileMenu {
+  display: block; }
+
+.mobileMenu ul {
+  padding-top: 3rem; }
+
+.sideMenu {
+  display: none;
+  width: 16rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0.5rem; }
+
+.sideMenu .fernglenLogo {
+  width: 100%;
+  padding: 1rem; }
+
+.sideMenu ul, .mobileMenu ul {
+  margin: 0; }
+
+.sideMenu a, .mobileMenu a {
+  display: block; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 1rem 1rem 1rem; }
+
+main {
+  flex: 1;
+  margin: 1rem 0; }
+
+footer {
+  flex: none;
+  margin: 1rem 0; }
+
+.embeddedImage {
+  border: 0;
+  width: 100%; }
+
+.imageL {
+  float: none;
+  display: block;
+  margin: 1rem 0; }
+
+.imageR {
+  float: none;
+  display: block;
+  margin: 1rem 0; }
+
+/*------------------------------------------------------------------------------------------------*/
+/* RESPONSIVE DESIGN                                                                              */
+@media (min-width: 60rem) {
+  .sideMenu {
+    display: block; }
+  .mobileHeader {
+    display: none; }
+  .content {
+    margin: 0 0 0 16rem; }
+  main {
+    margin: 1rem 15%; }
+  .imageL {
+    float: left;
+    width: 50%;
+    margin: 1rem 1rem 1rem 0; }
+  .imageR {
+    float: right;
+    width: 50%;
+    margin: 1rem 0 1rem 1rem; } }
+
+/*------------------------------------------------------------------------------------------------*/
+/* STYLING                                                                                        */
+body {
+  background-color: #1b321f;
+  color: #f9f5ec;
+  font-family: 'Lato', 'Helvetica', 'sans-serif';
+  font-size: 1.1rem;
+  line-height: 1.75rem; }
+
+.mobileHeader {
+  padding: 0.5rem 1rem;
+  background-color: #1b321f;
+  box-shadow: #1b321f 0 1rem 1rem; }
+
+.mobileMenuCurrent {
+  border: 0.15rem solid #f9f5ec;
+  border-radius: 1.5rem;
+  cursor: pointer; }
+
+.mobileMenuCurrent p {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none; }
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer; }
+
+.hamburgerIcon span {
+  background-color: #f9f5ec;
+  height: 0.25rem;
+  width: 100%; }
+
+.mobileMenu {
+  background-color: #1b321f;
+  border: 0.15rem solid #f9f5ec;
+  border-radius: 1.5rem; }
+
+.mobileMenu li, .sideMenu li {
+  list-style: none; }
+
+.mobileMenu a, .sideMenu a {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  border: 0.15rem solid transparent;
+  border-radius: 1.5rem;
+  padding: 0.25rem 1rem; }
+
+.mobileMenu a:hover, .sideMenu a:not(.selected):hover {
+  border-color: #86ac39; }
+
+.sideMenu .selected {
+  border-color: #f9f5ec; }
+
+h1 {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 2rem;
+  padding: 1.5rem 0 1.25rem 0; }
+
+h2 {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.5rem;
+  padding: 1.5rem 0 0.5rem 0; }
+
+p {
+  padding: 0.5rem 0; }
+
+a {
+  color: #f9f5ec; }
+
+ul {
+  list-style: disc outside none;
+  margin-left: 1rem; }
+
+figcaption {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: normal; }
+
+footer {
+  text-align: center;
+  font-size: 0.8rem; }

@@ -1,0 +1,6 @@
+<div class="imageL">
+  <a href="{{ .Get "path" }}" target="_blank">
+    <img class="embeddedImage" src="{{ .Get "path" }}" alt="{{ .Get "caption" }}">
+  </a>
+  {{ with .Get "caption" | safeHTML }}<figcaption>{{ . }}</figcaption>{{ end }}
+</div>

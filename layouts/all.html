@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-NZ">
+
+  <head>
+    <meta charset="utf-8" />
+    {{- $cssOptions := dict
+      "targetPath" "/css/fernglen.css"
+    -}}
+    {{ $cssResource := resources.Get "sass/fernglen.scss" | toCSS $cssOptions }}
+    <link rel="stylesheet" href="{{ $cssResource.RelPermalink }}">
+    <title>{{ .Site.Title }}</title>
+  </head>
+
+  <body>
+
+    <header class="mobileHeader">
+      <img src="/images/fernglen.svg" alt="Fernglen logo" class="fernglenLogo">
+      <input type="checkbox" id="mobileMenuToggle">
+      <label for="mobileMenuToggle" class="mobileMenuCurrent">
+        <p>{{ .Title }}</p>
+        <div class="hamburgerIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+      <nav class="mobileMenu">
+        <ul>
+          {{- range site.Menus.main -}}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="sideMenu">
+      <header>
+        <img src="/images/fernglen.svg" alt="Fernglen logo" class="fernglenLogo">
+      </header>
+      <ul>
+        {{- range site.Menus.main -}}
+          {{- if $.IsMenuCurrent .Menu . }}
+            <li><a href="{{ .URL }}" class="selected">{{ .Name }}</a></li>
+          {{- else }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{- end -}}
+        {{- end }}
+      </ul>
+    </nav>
+
+    <div class="content">
+      <main>
+        {{ .Content }}
+      </main>
+      <footer>
+        &copy; Copyright {{ time.Now.Year }} Fernglen Gardens
+      </footer>
+    </div>
+
+  </body>
+
+</html>
