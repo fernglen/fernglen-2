@@ -28,6 +28,12 @@ publishDir = 'docs'
     [[menus.main]]
         pageRef = '/visits'
         weight = 8
+    [[menus.main]]
+        pageRef = '/contact'
+        weight = 9
+    [[menus.main]]
+        pageRef = '/links'
+        weight = 10
 
 # Clear taxonomies to avoid creating stuff we don't need
 [taxonomies]

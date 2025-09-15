@@ -16,24 +16,19 @@ An access for those less mobile is at the cul-de-sac of Kauri Road at the top dr
 
 Allow approximately one hour to walk the complete track and longer if you want to view these points of interest in more detail:
 
-[Alpine House](#the-alpine-house)
-
+[Alpine House](#the-alpine-house)  
 Fernglen has aimed at creating a sub alpine environment in the city.
 
-[Offshore Islands Collection](#offshore-islands-collection)
-
+[Offshore Islands Collection](#offshore-islands-collection)  
 Here you will find plants from the Three Kings, the Poor knights and the Chatham Islands.
 
-[Dracophyllum Collection](#the-dracophyllum-collection)
-
+[Dracophyllum Collection](#the-dracophyllum-collection)  
 Near the rear wall of the trellis are different species of the unusual {{< species "Dracophyllum" >}} genus, the grass trees.
 
-[Fern House](#the-fern-collection)
-
+[Fern House](#the-fern-collection)  
 For those who want to venture further a visit to the fern house is well worth a look.
 
-[Ben's Ridge](#bens-ridge)
-
+[Ben's Ridge](#bens-ridge)  
 For those with more time and energy a visit to Ben's Ridge is well worth a visit to explore extensive plant collections, particularly the coprosma collection.
 
 ## The Alpine House
