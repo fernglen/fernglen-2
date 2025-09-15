@@ -17,7 +17,7 @@ Of special interest to Fernglen visitors will be:
 * An enclosed fernery containing 'Prince of Wales Feather Fern'
 * A bush walk across serene nīkau tree fern gully surrounded by a great variety of native bush
 * Birds all year round: hōrirerire (Grey Warbler), kererū (Wood Pigeon), tūī, tauhou (Silvereye)
-* Nakonako or Pīpīwharauroa (Shining Cuckoo) in spring/summer
+* Nakonako or pīpīwharauroa (Shining Cuckoo) in spring/summer
 * Kākā in autumn/winter
 * Minibeasts galore
 * A self-guided tour – take a guide at the kiosk and follow the directions to numbers highlighting interesting plants

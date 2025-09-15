@@ -10,9 +10,9 @@ Frank Fisher grew tomatoes, and ferns of which he would sell the fronds to the A
 
 Bill Fisher met Muriel when she moved to Auckland. A friend had told her of Bill's interest in native plants, and in her visits to his property, Muriel not only found a fellow native enthusiast, but also a husband. They were married in 1952, and Muriel came to live at Fernglen.
 
-The Fishers cherished the bush, and over the years have added many species to it. It was not only the Fishers who had an interest in their patch of bush. Thomas F. Cheeseman, the then curator of the Auckland Museum, would visit the bush from time to time having a particular interest in the rare toatoa, *Phyllocladus glaucus*, which grew there.
+The Fishers cherished the bush, and over the years have added many species to it. It was not only the Fishers who had an interest in their patch of bush. Thomas F. Cheeseman, the then curator of the Auckland Museum, would visit the bush from time to time having a particular interest in the rare toatoa, {{< species "Phyllocladus glaucus" >}}, which grew there.
 
-In the early 1920's, Professor Lancaster, the first Professor of Botany at Auckland University, would bring stage one students over to look at the bush, among other things examining the great rimu, *Dacrydium cupressinum*, which fell in to the gully during a very strong storm.
+In the early 1920's, Professor Lancaster, the first Professor of Botany at Auckland University, would bring stage one students over to look at the bush, among other things examining the great rimu, {{< species "Dacrydium cupressinum" >}}, which fell in to the gully during a very strong storm.
 
 Bill's first love was ferns, whereas Muriel had a great passion for alpines and hebes. She had a dream of creating an open air plant museum similar to Otari, so in the late 1950's they began importing scoria, rocks, and peat onto the property.
 
@@ -22,15 +22,15 @@ Faced with large rates demands, Muriel and Bill thought the only way to keep the
 
 The property was acquired in 1989 by the former Birkenhead City Council, partially gifted by Muriel Fisher and was opened to the public on 28 September 1991.
 
-The gazebo was constructed in memory of Dr Lucy Moore, co-editor of *"The Flora of NZ"* and gifted by Dr Lucy Cranwell who wrote *"The Botany of Auckland"* while botanist at the Auckland Museum in the 1930s. She had heard about the opening and wanted to gift Fernglen with a sum of money to "put towards what you see fit" on the request that it was to be in memory of her colleague and dear friend Dr Lucy Moore.
+The gazebo was constructed in memory of Dr Lucy Moore, co-editor of {{< title "The Flora of NZ" >}} and gifted by Dr Lucy Cranwell who wrote {{< title "The Botany of Auckland" >}} while botanist at the Auckland Museum in the 1930s. She had heard about the opening and wanted to gift Fernglen with a sum of money to "put towards what you see fit" on the request that it was to be in memory of her colleague and dear friend Dr Lucy Moore.
 
 Sadly, Muriel passed away in July 2012 and is greatly missed. Her passion for New Zealand flora sustained her for 97 years. Her legacy is Fernglen Gardens, and other books including:
 
-* *"Gardening with New Zealand Plants, Shrubs and Trees"* (1970), (this won the Wattie Book of the Year award)
-* *"New Zealand Ferns in your Garden"* by Muriel E. Fisher and L. Ward (1976, Collins)
-* *"A Touch of Nature"* by Muriel Fisher and Elaine Power (1981)
-* *"Growing New Zealand Plants, Shrubs and Trees"* (1994) (Revised and reprinted from the 1970 edition)
-* *"Fernglen - The Muriel Fisher Story"* (2005, Bateman)
+* {{< title "Gardening with New Zealand Plants, Shrubs and Trees" >}} (1970), (this won the Wattie Book of the Year award)
+* {{< title "New Zealand Ferns in your Garden" >}} by Muriel E. Fisher and L. Ward (1976, Collins)
+* {{< title "A Touch of Nature" >}} by Muriel Fisher and Elaine Power (1981)
+* {{< title "Growing New Zealand Plants, Shrubs and Trees" >}} (1994) (Revised and reprinted from the 1970 edition)
+* {{< title "Fernglen - The Muriel Fisher Story" >}} (2005, Bateman)
 
 Bill and Muriel received the prestigious Loder Cup in 1970, and subsequent to this, Muriel was awarded the Queen's Service Medal.
 

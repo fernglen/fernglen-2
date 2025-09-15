@@ -238,7 +238,7 @@ body {
   padding: 0.25rem 1rem; }
 
 .mobileMenu a:not(.selected):hover, .sideMenu a:not(.selected):hover {
-  border-color: #86ac39; }
+  border-color: #a7c270; }
 
 .mobileMenu .selected, .sideMenu .selected {
   border-color: #f9f5ec; }
@@ -246,12 +246,20 @@ body {
 h1 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 2rem;
-  padding: 1.5rem 0 1.25rem 0; }
+  padding: 1.5rem 0 1.25rem 0;
+  color: #a7c270; }
 
 h2 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 1.5rem;
-  padding: 1.5rem 0 0.5rem 0; }
+  padding: 1.5rem 0 0.5rem 0;
+  color: #a7c270; }
+
+h3 {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.25rem;
+  padding: 1.25rem 0 0.5rem 0;
+  color: #a7c270; }
 
 p {
   padding: 0.5rem 0; }

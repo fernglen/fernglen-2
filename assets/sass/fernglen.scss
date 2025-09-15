@@ -3,7 +3,7 @@
 
 $base-color: hsl(132, 30, 15);
 $base-color-light: hsl(100, 30, 30);
-$base-color-lightest: hsl(80, 50, 45);
+$base-color-lightest: hsl(80, 40, 60);
 $text-color: hsl(43, 50, 95);
 $highlight-color: hsl(359, 47, 40);
 $sideMenuWidth: 16rem;
@@ -296,12 +296,21 @@ h1 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 2rem;
   padding: 1.5rem 0 1.25rem 0;
+  color: $base-color-lightest;
 }
 
 h2 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 1.5rem;
   padding: 1.5rem 0 0.5rem 0;
+  color: $base-color-lightest;
+}
+
+h3 {
+  font-family: 'Raleway', 'Helvetica', 'sans-serif';
+  font-size: 1.25rem;
+  padding: 1.25rem 0 0.5rem 0;
+  color: $base-color-lightest;
 }
 
 p {
