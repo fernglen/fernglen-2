@@ -68,13 +68,13 @@ $contentPaddingV: 1rem;
 }
 
 html {
-  min-height: 100%;
+  height: 100%;
   font-size: medium;
+  text-size-adjust: none;
 }
 
 body {
-  min-height: 100%;
-  text-size-adjust: none;
+  height: 100%;
 }
 
 .mobileHeader {
@@ -143,9 +143,10 @@ body {
 }
 
 .content {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  margin: $mobileHeaderHeightTotal 1rem 1rem 1rem;
+  padding: $mobileHeaderHeightTotal 1rem 1rem 1rem;
 }
 
 main {
@@ -182,7 +183,7 @@ footer {
 @media (min-width: 60rem) {
 
   html {
-    font-size: 125%;
+    font-size: 120%;
   }
 
   .sideMenu {
@@ -198,7 +199,7 @@ footer {
   }
 
   .content {
-    margin: 0 0 0 $sideMenuWidth;
+    padding: 0 0 0 $sideMenuWidth;
   }  
 
   .imageL {

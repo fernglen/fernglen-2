@@ -68,12 +68,12 @@
   padding: 0; }
 
 html {
-  min-height: 100%;
-  font-size: medium; }
+  height: 100%;
+  font-size: medium;
+  text-size-adjust: none; }
 
 body {
-  min-height: 100%;
-  text-size-adjust: none; }
+  height: 100%; }
 
 .mobileHeader {
   display: block;
@@ -131,9 +131,10 @@ body {
   display: block; }
 
 .content {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 4rem 1rem 1rem 1rem; }
+  padding: 4rem 1rem 1rem 1rem; }
 
 main {
   flex: 1;
@@ -161,7 +162,7 @@ footer {
 /* RESPONSIVE DESIGN                                                                              */
 @media (min-width: 60rem) {
   html {
-    font-size: 125%; }
+    font-size: 120%; }
   .sideMenu {
     display: block; }
   .mobileHeader {
@@ -169,7 +170,7 @@ footer {
   main {
     margin: 1rem 15%; }
   .content {
-    margin: 0 0 0 16rem; }
+    padding: 0 0 0 16rem; }
   .imageL {
     float: left;
     width: 50%;
