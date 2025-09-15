@@ -248,7 +248,7 @@ body {
   padding: 0.25rem 1rem; }
 
 .mobileMenu a:not(.selected):hover, .sideMenu a:not(.selected):hover {
-  border-color: #99bd75; }
+  border-color: #528547; }
 
 .mobileMenu .selected, .sideMenu .selected {
   border-color: #efede7; }

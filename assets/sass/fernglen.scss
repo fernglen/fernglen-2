@@ -2,7 +2,7 @@
 /* CONSTANTS                                                                                      */
 
 $base-color: hsl(132, 30, 12);
-$base-color-light: hsl(110, 30, 30);
+$base-color-light: hsl(110, 30, 40);
 $base-color-lightest: hsl(90, 35, 60);
 $text-color: hsl(48, 20, 92);
 $highlight-color: hsl(359, 47, 40);
@@ -301,7 +301,7 @@ body {
 }
 
 .mobileMenu a:not(.selected):hover, .sideMenu a:not(.selected):hover  {
-  border-color: $base-color-lightest;
+  border-color: $base-color-light;
 }
 
 .mobileMenu .selected, .sideMenu .selected {
