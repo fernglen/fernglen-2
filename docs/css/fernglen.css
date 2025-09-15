@@ -140,13 +140,15 @@ main {
   flex: 1;
   margin: 1rem 0; }
 
-footer {
-  flex: none;
-  margin: 1rem 0; }
-
 .embeddedImage {
   border: 0;
   width: 100%; }
+
+h2 {
+  scroll-margin-top: 4rem; }
+
+h3 {
+  scroll-margin-top: 4rem; }
 
 .imageL {
   float: none;
@@ -156,6 +158,10 @@ footer {
 .imageR {
   float: none;
   display: block;
+  margin: 1rem 0; }
+
+footer {
+  flex: none;
   margin: 1rem 0; }
 
 /*------------------------------------------------------------------------------------------------*/
@@ -171,6 +177,10 @@ footer {
     margin: 1rem 15%; }
   .content {
     padding: 0 0 0 16rem; }
+  h2 {
+    scroll-margin-top: initial; }
+  h3 {
+    scroll-margin-top: initial; }
   .imageL {
     float: left;
     width: 50%;
@@ -183,18 +193,18 @@ footer {
 /*------------------------------------------------------------------------------------------------*/
 /* STYLING                                                                                        */
 body {
-  background-color: #1b321f;
-  color: #f9f5ec;
+  background-color: #152819;
+  color: #efede7;
   font-family: 'Lato', 'Helvetica', 'sans-serif';
   line-height: 1.75rem; }
 
 .mobileHeader {
   padding: 0.5rem 1rem;
-  background-color: #1b321f;
-  box-shadow: #1b321f 0 1rem 1rem; }
+  background-color: #152819;
+  box-shadow: #152819 0 1rem 1rem; }
 
 .mobileMenuCurrent {
-  border: 0.15rem solid #f9f5ec;
+  border: 0.15rem solid #efede7;
   border-radius: 1.5rem;
   cursor: pointer; }
 
@@ -206,14 +216,14 @@ body {
 
 .hamburgerIcon {
   display: flex;
-  border: 0.15rem solid #f9f5ec;
+  border: 0.15rem solid #efede7;
   border-radius: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer; }
 
 .hamburgerIcon span {
-  background-color: #f9f5ec;
+  background-color: #efede7;
   height: 0.25rem;
   width: 100%; }
 
@@ -221,8 +231,8 @@ body {
   border-color: transparent; }
 
 .mobileMenu {
-  background-color: #1b321f;
-  border: 0.15rem solid #f9f5ec;
+  background-color: #152819;
+  border: 0.15rem solid #efede7;
   border-radius: 0.5rem; }
 
 .mobileMenu li, .sideMenu li {
@@ -238,34 +248,34 @@ body {
   padding: 0.25rem 1rem; }
 
 .mobileMenu a:not(.selected):hover, .sideMenu a:not(.selected):hover {
-  border-color: #a7c270; }
+  border-color: #99bd75; }
 
 .mobileMenu .selected, .sideMenu .selected {
-  border-color: #f9f5ec; }
+  border-color: #efede7; }
 
 h1 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 2rem;
   padding: 1.5rem 0 1.25rem 0;
-  color: #a7c270; }
+  color: #99bd75; }
 
 h2 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 1.5rem;
   padding: 1.5rem 0 0.5rem 0;
-  color: #a7c270; }
+  color: #99bd75; }
 
 h3 {
   font-family: 'Raleway', 'Helvetica', 'sans-serif';
   font-size: 1.25rem;
   padding: 1.25rem 0 0.5rem 0;
-  color: #a7c270; }
+  color: #99bd75; }
 
 p {
   padding: 0.5rem 0; }
 
 a {
-  color: #f9f5ec; }
+  color: #efede7; }
 
 ul {
   list-style: disc outside none;

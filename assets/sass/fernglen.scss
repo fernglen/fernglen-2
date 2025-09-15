@@ -1,17 +1,17 @@
 /*------------------------------------------------------------------------------------------------*/
 /* CONSTANTS                                                                                      */
 
-$base-color: hsl(132, 30, 15);
-$base-color-light: hsl(100, 30, 30);
-$base-color-lightest: hsl(80, 40, 60);
-$text-color: hsl(43, 50, 95);
+$base-color: hsl(132, 30, 12);
+$base-color-light: hsl(110, 30, 30);
+$base-color-lightest: hsl(90, 35, 60);
+$text-color: hsl(48, 20, 92);
 $highlight-color: hsl(359, 47, 40);
+
 $sideMenuWidth: 16rem;
 $mobileHeaderHeight: 3rem;
 $mobileHeaderPaddingH: 1rem;
 $mobileHeaderPaddingV: 0.5rem;
 $mobileHeaderHeightTotal: $mobileHeaderHeight + 2 * $mobileHeaderPaddingV;
-$mobileMenuCurrentWidth: $sideMenuWidth + $mobileHeaderHeight;
 $borderWidth: 0.15rem;
 $contentPaddingH: 1rem;
 $contentPaddingV: 1rem;
@@ -154,14 +154,17 @@ main {
   margin: 1rem 0;
 }
 
-footer {
-  flex: none;
-  margin: 1rem 0;
-}
-
 .embeddedImage {
   border: 0;
   width: 100%;
+}
+
+h2 {
+  scroll-margin-top: $mobileHeaderHeightTotal;
+}
+
+h3 {
+  scroll-margin-top: $mobileHeaderHeightTotal;
 }
 
 .imageL {
@@ -173,6 +176,11 @@ footer {
 .imageR {
   float: none;
   display: block;
+  margin: 1rem 0;
+}
+
+footer {
+  flex: none;
   margin: 1rem 0;
 }
 
@@ -201,6 +209,14 @@ footer {
   .content {
     padding: 0 0 0 $sideMenuWidth;
   }  
+
+  h2 {
+    scroll-margin-top: initial;
+  }
+
+  h3 {
+    scroll-margin-top: initial;
+  }
 
   .imageL {
     float: left;
