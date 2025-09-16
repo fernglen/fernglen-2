@@ -287,7 +287,7 @@ a {
 
 ul {
   list-style: disc outside none;
-  margin-left: 1rem; }
+  padding-left: 1rem; }
 
 figcaption {
   font-size: 0.9rem;

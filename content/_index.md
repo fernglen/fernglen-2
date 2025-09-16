@@ -4,11 +4,15 @@ title = 'Home'
 
 # Fernglen Native Plant Gardens
 
+{{< imageRight path="images/fernglen-entrance.webp" caption="Main entrance of Fernglen Gardens" >}}
+
 Fernglen Gardens are located in Kauri Road, Birkenhead and owned by the Auckland Council.  Since the 1990s dedicated volunteers of Fernglen Native Plant Gardens Committee and Trust have been involved in the development and education surrounding the gardens. 
 
 Fernglen is devoted to the growing and preservation of New Zealand plants. It aims to educate people of all ages about New Zealand flora and fauna. The gardens consist of approximately 2.47 hectares (9 acres) of Kauri Association bush with roughly 0.2 hectares (half an acre) under cultivation.
 
 Well maintained walking tracks provide an excellent opportunity to observe many interesting species including very old kauri and rimu.  Many species are labelled with botanical, Māori and common names.
+
+{{< imageRight path="images/parataniwha glade fernglen.webp" caption="Parataniwha glade" >}}
 
 Of special interest to Fernglen visitors will be:
 
