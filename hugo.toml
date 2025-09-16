@@ -27,6 +27,9 @@ publishDir = 'docs'
         weight = 6
     [[menus.main]]
         pageRef = '/visits'
+        weight = 7
+    [[menus.main]]
+        pageRef = '/newsletters'
         weight = 8
     [[menus.main]]
         pageRef = '/contact'
