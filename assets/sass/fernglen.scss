@@ -179,6 +179,12 @@ h3 {
   margin: 1rem 0;
 }
 
+pre {
+  width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+}
+
 footer {
   flex: none;
   margin: 1rem 0;
