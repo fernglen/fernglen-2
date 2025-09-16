@@ -2,7 +2,7 @@
 title = 'Newsletters'
 +++
 
-Friends of Fernglen Newsletters
+# Friends of Fernglen Newsletters
 
 As Fernglen grows, it needs continued support from interested members of the community. One way to show your support is by joining the mailing list and receive newsletters every quarter. Fernglen is reliant on the community to assist with working bees and financial support to assist in maintaining and growing its rare plant collection. If you would like to receive news from Fernglen please email Fernglen
 
