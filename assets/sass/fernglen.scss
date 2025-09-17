@@ -7,7 +7,7 @@ $base-color-lightest: hsl(90, 35, 60);
 $text-color: hsl(48, 20, 92);
 $highlight-color: hsl(359, 47, 40);
 
-$sideMenuWidth: 16rem;
+$sideMenuWidth: 16em;
 $mobileHeaderHeight: 3rem;
 $mobileHeaderPaddingH: 1rem;
 $mobileHeaderPaddingV: 0.5rem;
@@ -85,6 +85,7 @@ body {
   width: 100%;
   height: $mobileHeaderHeightTotal;
   padding: $mobileHeaderPaddingV $mobileHeaderPaddingH;
+  z-index: 1000;
 }
 
 .mobileHeader .fernglenLogo {
@@ -98,7 +99,6 @@ body {
   width: $mobileHeaderHeight;
   height: $mobileHeaderHeight;
   padding: 0.75rem;
-  z-index: 1001;
 }
 
 #mobileMenuToggle {
@@ -108,11 +108,33 @@ body {
 .mobileMenu {
   display: none;
   position: fixed;
-  top: $mobileHeaderPaddingV;
-  left: $mobileHeaderPaddingH;
-  right: $mobileHeaderPaddingH;
+  top: 0;
+  left: 0;
+  margin: $mobileHeaderPaddingV $mobileHeaderPaddingH;
+  width: calc(100% - #{2*$mobileHeaderPaddingH});
+  max-height: calc(100% - #{2*$mobileHeaderPaddingV});
   padding: $mobileHeaderPaddingV $mobileHeaderHeight;
-  z-index: 1000;
+  column-width: $sideMenuWidth;
+  overflow-y: auto;
+  z-index: 1001;
+}
+
+.menuCloseIcon {
+  position: fixed;
+  top: $mobileHeaderPaddingV;
+  right: $mobileHeaderPaddingH;
+  width: $mobileHeaderHeight;
+  height: $mobileHeaderHeight;
+  padding: 0.75rem;
+  z-index: 1002;
+}
+
+.menuCloseIcon span {
+  width: 100%;
+}
+
+.mobileMenu ul {
+  padding: 0;
 }
 
 #mobileMenuToggle:checked ~ .mobileMenu {
@@ -127,6 +149,7 @@ body {
   top: 0;
   left: 0;
   margin: 0.5rem;
+  overflow-y: auto;
 }
 
 .sideMenu .fernglenLogo {
@@ -269,10 +292,10 @@ body {
 
 .hamburgerIcon {
   display: flex;
-  border: $borderWidth solid $text-color;
-  border-radius: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
+  border: $borderWidth solid $text-color;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
@@ -284,6 +307,12 @@ body {
 
 #mobileMenuToggle:checked ~ .hamburgerIcon {
   border-color: transparent;
+}
+
+.menuCloseIcon {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
 }
 
 .mobileMenu {

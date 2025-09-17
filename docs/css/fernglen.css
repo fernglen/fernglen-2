@@ -82,7 +82,8 @@ body {
   left: 0;
   width: 100%;
   height: 4rem;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  z-index: 1000; }
 
 .mobileHeader .fernglenLogo {
   height: 3rem; }
@@ -93,8 +94,7 @@ body {
   right: 1rem;
   width: 3rem;
   height: 3rem;
-  padding: 0.75rem;
-  z-index: 1001; }
+  padding: 0.75rem; }
 
 #mobileMenuToggle {
   display: none; }
@@ -102,23 +102,43 @@ body {
 .mobileMenu {
   display: none;
   position: fixed;
-  top: 0.5rem;
-  left: 1rem;
-  right: 1rem;
+  top: 0;
+  left: 0;
+  margin: 0.5rem 1rem;
+  width: calc(100% - 2rem);
+  max-height: calc(100% - 1rem);
   padding: 0.5rem 3rem;
-  z-index: 1000; }
+  column-width: 16em;
+  overflow-y: auto;
+  z-index: 1001; }
+
+.menuCloseIcon {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+  z-index: 1002; }
+
+.menuCloseIcon span {
+  width: 100%; }
+
+.mobileMenu ul {
+  padding: 0; }
 
 #mobileMenuToggle:checked ~ .mobileMenu {
   display: block; }
 
 .sideMenu {
   display: none;
-  width: 16rem;
+  width: 16em;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  margin: 0.5rem; }
+  margin: 0.5rem;
+  overflow-y: auto; }
 
 .sideMenu .fernglenLogo {
   width: 100%;
@@ -181,7 +201,7 @@ footer {
   main {
     margin: 1rem 15%; }
   .content {
-    padding: 0 0 0 16rem; }
+    padding: 0 0 0 16em; }
   h2 {
     scroll-margin-top: initial; }
   h3 {
@@ -221,10 +241,10 @@ body {
 
 .hamburgerIcon {
   display: flex;
-  border: 0.15rem solid #efede7;
-  border-radius: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
+  border: 0.15rem solid #efede7;
+  border-radius: 0.5rem;
   cursor: pointer; }
 
 .hamburgerIcon span {
@@ -234,6 +254,11 @@ body {
 
 #mobileMenuToggle:checked ~ .hamburgerIcon {
   border-color: transparent; }
+
+.menuCloseIcon {
+  display: flex;
+  text-align: center;
+  cursor: pointer; }
 
 .mobileMenu {
   background-color: #152819;
