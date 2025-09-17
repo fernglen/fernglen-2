@@ -29,7 +29,7 @@ Of special interest to Fernglen visitors will be:
 
 The entrance to Fernglen is located along the extension of Kauri Road at:
 
-**36 Kauri Road (between house numbers 34 and 48)  
+**36 Kauri Road (between no. 34 and 48)  
 Birkenhead  
 Auckland**
 

@@ -6,7 +6,7 @@ title = 'Contact Us / Donate'
 
 Fernglen Native Plant Gardens are located at:
 
-**36 Kauri Road (between house numbers 34 and 48)  
+**36 Kauri Road (between no. 34 and 48)  
 Birkenhead  
 Auckland  
 New Zealand  
